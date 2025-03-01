@@ -8,8 +8,8 @@ let clickCount = 0;  // 记录点击 No 的次数
 // No 按钮的文字变化
 const noTexts = [
     "陛下认真的吗…", 
-    "陛下要不再想想？", 
-    "陛下能不能不选这个QAQ ", 
+    "！陛下要不再想想", 
+    "陛下真的要选这个吗QAQ ", 
     "我会很伤心…", 
     "陛下...TAT"
 ];
@@ -37,11 +37,11 @@ noButton.addEventListener("click", function() {
     }
 
     // 图片变化（前 5 次变化）
-    if (clickCount === 1) mainImage.src = "images/shocked.png"; // 震惊
-    if (clickCount === 2) mainImage.src = "images/think.png";   // 思考
-    if (clickCount === 3) mainImage.src = "images/angry.png";   // 生气
-    if (clickCount === 4) mainImage.src = "images/crying.png";  // 哭
-    if (clickCount >= 5) mainImage.src = "images/crying.png";  // 之后一直是哭
+    if (clickCount === 1) mainImage.src = "images/2.png"; // 震惊
+    if (clickCount === 2) mainImage.src = "images/3.png";   // 思考
+    if (clickCount === 3) mainImage.src = "images/4.png";   // 生气
+    if (clickCount === 4) mainImage.src = "images/5.png";  // 哭
+    if (clickCount >= 5) mainImage.src = "images/5.png";  // 之后一直是哭
 
 });
 
@@ -50,7 +50,7 @@ yesButton.addEventListener("click", function() {
     document.body.innerHTML = `
         <div class="yes-screen">
             <h1 class="yes-text">!!!喜欢你!! ( >᎑<)♡︎ᐝ</h1>
-            <img src="images/hug.png" alt="拥抱" class="yes-image">
+            <img src="images/6.png" alt="拥抱" class="yes-image">
         </div>
     `;
 
